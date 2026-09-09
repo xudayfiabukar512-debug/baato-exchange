@@ -1,0 +1,12 @@
+{
+  "name": "bato-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev": "node scripts/dev.js",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && npm start --prefix server",
+    "test": "npm test --prefix server && npm run build --prefix client"
+  }
+}
